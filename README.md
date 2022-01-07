@@ -175,7 +175,6 @@ We will be using [Docker Compose](https://docs.docker.com/compose/overview/) to 
 ```
 cd ~
 mkdir n8n
-touch docker-compose.yml
 nano docker-compose.yml
 ```
 
@@ -232,7 +231,6 @@ The last step is making your n8n instance available to the outside world. To do 
 
 ```
 cd /etc/nginx/sites-available/
-sudo touch n8n.conf
 sudo nano n8n.conf
 ```
 

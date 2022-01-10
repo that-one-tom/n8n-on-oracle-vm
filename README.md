@@ -67,7 +67,7 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 
 # Allow the current user to run Docker commands without sudo
 sudo usermod -aG docker ${USER}
-su - ${USER}
+sudo su - ${USER}
 
 # Test Docker was installed correctly
 docker run hello-world
@@ -96,6 +96,12 @@ In this example setup, we will be using [UFW](https://help.ubuntu.com/community/
 
 ```
 sudo apt remove iptables-persistent
+```
+
+At this stage, reboot your instance to make sure all previous changes have taken effect.
+
+```
+sudo reboot now
 ```
 
 We are now ready to configure UFW. First make sure it knows about all your applications by running the below command. It should return `Nginx Full` and `OpenSSH` among the available applications.

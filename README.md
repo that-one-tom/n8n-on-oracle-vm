@@ -172,7 +172,7 @@ This first step will look slighlty different different depending on the provider
 
 To secure traffic to our n8n instance with [SSL/TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) using free certificates from [Let's Encrypt](https://letsencrypt.org/), we need a domain name from a provider that let's us configure DNS settings. Namecheap, GoDaddy, or Google Domains are a few big names providing affordable domains, but there are many more and pretty much any of them will do.
 
-Log in to the admin panel of your provider and create a DNS A record for your chosen (sub-)domain with a value of the public IP address of your Oracle Cloud VM instance.
+Log in to the admin panel of your provider (where you manage your domain names) and create a DNS A record for your chosen (sub-)domain with a value of the public IP address of your Oracle Cloud VM instance.
 
 ### Install n8n
 We will be using [Docker Compose](https://docs.docker.com/compose/overview/) to run n8n. The below commands will create a folder in which we then create the `docker-compose.yml` configuration file describing the application.
@@ -180,6 +180,7 @@ We will be using [Docker Compose](https://docs.docker.com/compose/overview/) to 
 ```
 cd ~
 mkdir n8n
+cd n8n
 nano docker-compose.yml
 ```
 

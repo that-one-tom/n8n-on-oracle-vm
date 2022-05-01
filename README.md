@@ -201,7 +201,7 @@ services:
     ports:
       - 5678:5678
     environment:
-      - WEBHOOK_TUNNEL_URL=<domain name>
+      - WEBHOOK_URL=<domain name>
       - GENERIC_TIMEZONE=Europe/Berlin
       - N8N_DIAGNOSTICS_ENABLED=false
       - N8N_BASIC_AUTH_ACTIVE=true

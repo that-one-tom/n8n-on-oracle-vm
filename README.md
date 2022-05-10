@@ -201,12 +201,13 @@ services:
     ports:
       - 5678:5678
     environment:
-      - WEBHOOK_URL=<domain name>
       - GENERIC_TIMEZONE=Europe/Berlin
-      - N8N_DIAGNOSTICS_ENABLED=false
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=<n8n user>
       - N8N_BASIC_AUTH_PASSWORD=<n8n password>
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - N8N_USER_MANAGEMENT_DISABLED=true
+      - WEBHOOK_URL=<domain name>
     volumes:
       - /home/ubuntu/n8n/n8n_data:/home/node/.n8n
 ```
@@ -268,7 +269,7 @@ sudo ln -s /etc/nginx/sites-available/n8n.conf /etc/nginx/sites-enabled/
 sudo nginx -t
 ```
 
-You should see an output ending with `nginx: configuration file /etc/nginx/nginx.conf test is successful`. We can now proceed with reload NGINX to apply the newly added configuration:
+You should see an output ending with `nginx: configuration file /etc/nginx/nginx.conf test is successful`. We can now proceed with reloading NGINX to apply the newly added configuration:
 
 ```
 sudo systemctl reload nginx

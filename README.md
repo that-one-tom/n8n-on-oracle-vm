@@ -14,7 +14,7 @@ Fill out the form with the following information:
   * Image: Canonical Ubuntu 20.04 with the latest build date
   * Shape: Virtual Machine / Ampere / VM.Standard.A1.Flex
 * Networking: Default settings
-* Add SSH keys: Upload your public key files (if you need to generate one or are unsure about this, GitHub has a [great tutorial](https://help.github.com/articles/generating-ssh-keys/))
+* Add SSH keys: Upload your public key files (if you need to generate one or are unsure about this, GitHub has a [great tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
 * Boot volume: Default settings
 
 Click Create once done.

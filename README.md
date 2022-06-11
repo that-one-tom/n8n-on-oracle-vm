@@ -1,3 +1,7 @@
+A simplified version of this guide using the latest Ubuntu LTS version and including a bunch of screenshots is available [here on my blog](https://www.thomasmartens.eu/setting-up-a-free-n8n-server-on-oracle-cloud/).
+
+I'll keep this older guide for Ubuntu 20.04 + Nginx available but won't update it anymore.
+
 # Setting up n8n using Ubuntu, Docker, NGINX + UFW on Oracle Cloud
 
 ## Sign up to Oracle Cloud
